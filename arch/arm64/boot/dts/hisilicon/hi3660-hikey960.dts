@@ -71,3 +71,11 @@
 &uart6 {
 	status = "okay";
 };
+
+&spi2 {
+	status = "okay";
+};
+
+&spi3 {
+	status = "okay";
+};
