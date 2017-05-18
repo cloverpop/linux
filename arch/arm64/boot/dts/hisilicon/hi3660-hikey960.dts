@@ -73,7 +73,15 @@
 };
 
 &spi2 {
-	status = "okay";
+//	status = "okay";
+
+/*	spidev@0 {
+		compatible = "linux,spidev";
+		spi-max-frequency = <500000>;
+		reg = <0>;
+		status = "okay";
+	};
+ */
 };
 
 &spi3 {
