@@ -164,6 +164,8 @@
 };
 
 &spi2 {
+	/* On Low speed expansion */
+	label = "LS-SPI0";
 //	status = "okay";
 
 /*	spidev@0 {
@@ -176,6 +178,8 @@
 };
 
 &spi3 {
+	/* On High speed expansion */
+	label = "HS-SPI1";
 	status = "okay";
 };
 
