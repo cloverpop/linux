@@ -122,12 +122,24 @@ void serdev_device_write_wakeup(struct serdev_device *serdev)
 }
 EXPORT_SYMBOL_GPL(serdev_device_write_wakeup);
 
+int serdev_device_write_buf(struct serdev_device *serdev,
+			    const unsigned char *buf, size_t count)
+{
+	struct serdev_controller *ctrl = serdev->ctrl;
+
+	if (!ctrl || !ctrl->ops->write_buf)
+		return -EINVAL;
+
+	return ctrl->ops->write_buf(ctrl, buf, count);
+}
+EXPORT_SYMBOL_GPL(serdev_device_write_buf);
+
 int serdev_device_write(struct serdev_device *serdev,
 			const unsigned char *buf, size_t count,
 			unsigned long timeout)
 {
 	struct serdev_controller *ctrl = serdev->ctrl;
-	int ret;
+	int ret, wr_cnt = 0;
 
 	if (!ctrl || !ctrl->ops->write_buf ||
 	    (timeout && !serdev->ops->write_wakeup))
@@ -143,12 +155,13 @@ int serdev_device_write(struct serdev_device *serdev,
 
 		buf += ret;
 		count -= ret;
+		wr_cnt += ret;
 
 	} while (count &&
 		 (timeout = wait_for_completion_timeout(&serdev->write_comp,
 							timeout)));
 	mutex_unlock(&serdev->write_lock);
-	return ret < 0 ? ret : (count ? -ETIMEDOUT : 0);
+	return ret < 0 ? ret : (count ? -ETIMEDOUT : wr_cnt);
 }
 EXPORT_SYMBOL_GPL(serdev_device_write);
 
