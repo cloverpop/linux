@@ -371,7 +371,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO0>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio1: gpio@e8a0c000 {
@@ -385,7 +384,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO1>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio2: gpio@e8a0d000 {
@@ -399,7 +397,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO2>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio3: gpio@e8a0e000 {
@@ -413,7 +410,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO3>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio4: gpio@e8a0f000 {
@@ -427,7 +423,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO4>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio5: gpio@e8a10000 {
@@ -441,7 +436,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO5>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio6: gpio@e8a11000 {
@@ -455,7 +449,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO6>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio7: gpio@e8a12000 {
@@ -469,7 +462,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO7>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio8: gpio@e8a13000 {
@@ -483,7 +475,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO8>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio9: gpio@e8a14000 {
@@ -497,7 +488,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO9>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio10: gpio@e8a15000 {
@@ -511,7 +501,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO10>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio11: gpio@e8a16000 {
@@ -525,7 +514,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO11>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio12: gpio@e8a17000 {
@@ -539,7 +527,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO12>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio13: gpio@e8a18000 {
@@ -553,7 +540,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO13>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio14: gpio@e8a19000 {
@@ -567,7 +553,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO14>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio15: gpio@e8a1a000 {
@@ -581,7 +566,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO15>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio16: gpio@e8a1b000 {
@@ -594,7 +578,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO16>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio17: gpio@e8a1c000 {
@@ -607,7 +590,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO17>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio18: gpio@ff3b4000 {
@@ -621,7 +603,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO18>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio19: gpio@ff3b5000 {
@@ -635,7 +616,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO19>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio20: gpio@e8a1f000 {
@@ -649,7 +629,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO20>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio21: gpio@e8a20000 {
@@ -663,7 +642,6 @@
 			gpio-ranges = <&pmx3 0 0 6>;
 			clocks = <&crg_ctrl HI3660_PCLK_GPIO21>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio22: gpio@fff0b000 {
@@ -678,7 +656,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO0>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio23: gpio@fff0c000 {
@@ -693,10 +670,9 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO1>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
-		 gpio24: gpio@fff0d000 {
+		gpio24: gpio@fff0d000 {
 			compatible = "arm,pl061", "arm,primecell";
 			reg = <0 0xfff0d000 0 0x1000>;
 			interrupts = <GIC_SPI 108 IRQ_TYPE_LEVEL_HIGH>;
@@ -708,7 +684,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO2>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio25: gpio@fff0e000 {
@@ -723,7 +698,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO3>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio26: gpio@fff0f000 {
@@ -738,7 +712,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO4>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio27: gpio@fff10000 {
@@ -753,7 +726,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO5>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		gpio28: gpio@fff1d000 {
@@ -766,7 +738,6 @@
 			#interrupt-cells = <2>;
 			clocks = <&sctrl HI3660_PCLK_AO_GPIO6>;
 			clock-names = "apb_pclk";
-			status = "ok";
 		};
 
 		spi2: spi@ffd68000 {
