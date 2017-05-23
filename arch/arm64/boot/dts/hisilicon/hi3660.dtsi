@@ -189,7 +189,6 @@
 			ufs-hi3660-broken-fastauto;
 			ufs-hi3660-use-HS-GEAR3;
 			ufs-hi3660-broken-clk-gate-bypass;
-			status = "ok";
 		};
 
 		reboot {
@@ -798,7 +797,6 @@
 			clock-names = "pcie_phy_ref", "pcie_aux",
 				"pcie_apb_phy", "pcie_apb_sys", "pcie_aclk";
 			reset-gpio = <&gpio11 1 0 >;
-			status = "ok";
 		};
 
 		pmic: pmic@fff34000 {
@@ -806,7 +804,6 @@
 			reg = <0x0 0xfff34000 0x0 0x1000>;
 			interrupt-controller;
 			#interrupt-cells = <2>;
-			status = "ok";
 
 			regulators {
 				ldo1: LDO1 {
